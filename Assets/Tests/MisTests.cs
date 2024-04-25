@@ -16,7 +16,7 @@ public class MisTests {
     // por orden alfabético y eso podría no funcionar
     [UnityTest, Order(1)]
     public IEnumerator Inicio() {
-        SceneManager.LoadScene("SampleScene"); // Cargamos la escena
+        SceneManager.LoadScene("SimpleTests"); // Cargamos la escena
         yield return null; // Esperamos a que se dibuje el primer frame
         cubeObject = GameObject.Find("Cube"); // Localizamos el cubo
     }
